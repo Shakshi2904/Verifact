@@ -68,6 +68,15 @@ html,body{
     font-size: 2vw;
     font-weight:300;
 }
+#nright a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10.5vh;
+    width: 12vw;
+    background-color: #FFE400;
+    color:black;
+}
 #footer{
     position: absolute;
     bottom:0;
@@ -96,17 +105,6 @@ h1{
     position: relative;
     font-size: 3vw;
     padding-top: 15vh;
-}
-.check{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFE400;
-    color: #000;
-    height:70px;
-    width:100%;
-    padding:20px 0;
-
 }
 textarea{
     width:80%;
