@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="page4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+    <div id="main">
+        <div id="workingarea">
+            <div id="nav">
+                <div id="nleft">
+                    <img src="logo 1.png" alt="">
+                    <a href="#">Verifacts</a>
+                </div>
+                <div id="nright">
+                    <a id="e" href="">Home</a>
+                    <a id="e" class="check" href="">Check</a>
+                    <a id="e" href="">About</a>
+                    <a id="e" href="">Contact</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                      <a href="page1.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="check.html" class="nav-link">Check</a>
+                      </li>
+                    <li class="nav-item">
+                      <a href="page5.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                  </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div id="main_part">
+                <form action="/action_page.php">
+                    <h1 class="h1">KNOW THE REALITY</h1>
+                    <textarea id="textarea" name="" rows="6" cols="50">Write the message...</textarea>
+                    <br>
+                    <input id="button" type="submit" value="Submit →">
+                    <p id="t">The above news is FAKE/REAL.</p>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>© 2023 aiwithsahil</p>
+        </div>
+      
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const t = document.querySelector("#textarea");
+const h = document.querySelector(".h1");
+const a = document.querySelector("#main_part");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  t.classList.toggle("active");
+  h.classList.toggle("active");
+  a.classList.toggle("active");
+})
+
+
+const navLink =document.querySelectorAll(".nav-link");
+navLink.forEach(n => n.addEventListener("click",closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+  t.classList.remove("active");
+  h.classList.remove("active");
+  a.classList.remove("active");
+}
+    </script>
+</body>
+</html>
